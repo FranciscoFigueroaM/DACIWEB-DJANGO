@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %}
+{% block title %}Objetivos{% endblock %}
+{% load static %}
+{% block content %}
+<section class="wrapper">
+    <div class="inner">
+        <header class="special">
+            <h2>OBJETIVOS</h2>
+            <p>Los miembros de este equipo están constantemente motivados en investigar y aprender diversas tecnologías y/o metodologías que pueden ayudar al desarrollo personal y profesional de ellos.</p>
+        </header>
+        <div class="highlights">
+            <section>
+                <div class="content">
+                    <header>
+                        <img src="{% static 'core/images/enjoy.svg' %}" style="width: 30%;">
+                        <h3>Divertirnos</h3>
+                    </header>
+                    <p>Buscamos trabajar en diversos proyectos que nos apasionen y nos llenen de ganas por conocer más
+                        del mundo de la programación y de las tecnologías.</p>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <header>
+                        <img src="{% static 'core/images/happy.svg' %}" style="width: 30%;">
+                        <h3>Disfrutar</h3>
+                    </header>
+                    <p>En nuestro equipo es importante estar aprendiendo nuevas tecnologías para incorporar estás en
+                        proyectos que nos gusten.</p>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <header>
+                        <img src="{% static 'core/images/brain.svg' %}" style="width: 30%;">
+                        <h3>Aprender</h3>
+                    </header>
+                    <p>Aprender es una tarea esencial para nosotros, ya que con cada conocimiento adquirido somos
+                        capáces de brindar la mejor solución.</p>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <header>
+                        <img src="{% static 'core/images/mangesturingno.svg' %}" style="width: 30%;">
+                        <h3>No es una obligación</h3>
+                    </header>
+                    <p>El compromiso de nuestro equipo debe nacer desde las ganas de participar y aprender, en caso
+                        contrario se debe descansar de las tareas asignadas o renunciar a estas.</p>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <header>
+                        <img src="{% static 'core/images/man.svg' %}" style="width: 30%;">
+                        <h3>Comunicación</h3>
+                    </header>
+                    <p>Nuestro equipo debe estar en constante comunicación para notificar nuevas ideas, replantear la
+                        solución de un proyecto o sobre lo que pasa en nuestras vidas. Lo importante es estar en
+                        constante comunicación.</p>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <header>
+                        <img src="{% static 'core/images/agreement.svg' %}" style="width: 30%;">
+                        <h3>Todas las reglas se deben cumplir</h3>
+                    </header>
+                    <p>Al incumplir una de las reglas, se dará un tiempo de descanso para los participantes del equipo
+                        hasta que vuelva la motivación del comienzo de esta iniciativa.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="{% static 'core/assets/css/main.css' %}" />
+    <title>{% block title %}{% endblock %} | DACI</title>
+</head>
+
+<body class="is-preload">
+    <!--Header-->
+    <header id="header">
+        <a class="logo" href="{% url 'home' %}">DACI</a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'objectives' %}">Objectivos</a></li>
+            <li><a href="{% url 'rules' %}">Reglas</a></li>
+        </ul>
+    </nav>
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h1>D.A.C.I</h1>
+            <p>"Disfrutar, divertinos y aprender son nuestros objetivos"</p>
+        </div>
+        <video autoplay loop muted playsinline src="{% static 'core/images/banner.mp4' %}"></video>
+    </section>
+    <!--Contenido-->
+    {% block content %}{% endblock %}
+    <!-- Scripts -->
+    <script src="{% static 'core/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/browser.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'core/assets/js/util.js' %}"></script>
+    <script src="{% static 'core/assets/js/main.js' %}"></script>
+</body>
+
+</html>
