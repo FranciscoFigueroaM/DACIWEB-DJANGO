@@ -1,0 +1,19 @@
+==================== TUTORIAL DE CREACIÓN DE PROYECTO EN DJANGO ====================
+
+1.- Una vez instalado conda vamos al cmd y creamos el entorno virtual de la siguiente manera 
+"conda create -n django2 python=3.6"
+2.- Instalamos los paquetes presionando "y"
+3.- Vamos a activar el entorno django2 con "activate django2"
+4.- Dentro del entorno vamos a instalar la última versión de django (en este caso la 3.0.3) de la siguiente
+manera "pip install Django==3.0.3"
+5.- Para saber si django se instalo correctamente vamos a verificar con "python -m django --version"
+6.- Vamos a ir a nuestra ruta donde vamos a alojar el proyecto a realizar en mi caso "cd D:\Proyectos Varios\Python\Django"
+7.- Vamos a crear el proyecto con "django-admin startproject daci <==(nombre del proyecto)"
+8.- Vamos a abrir el director de nuestro proyecto con nuestro editor, en mi caso con visual code
+9.- Sobre nuestra carpeta principal con el nombre del proyecto vamos a dar clic derecho y seleccionar "Open in
+Terminal"
+10.- En la terminal vamos a activar el entorno creado en los primeros pasos con "activate django2"
+11.- Vamos a instalar pylint que sirve para que la sintaxis sea marcada por el editor. Lo instalaremos con 
+"conda install pylint"
+12.- Para iniciar nuestro proyecto en el servidor vamos a dar clic derecho al último archivo desplegado llamado
+manage.py y luego clic en "Run Python File In Terminal"
